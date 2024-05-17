@@ -38,6 +38,11 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/login');
+                },
+                child: const Text("ไป login")),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -58,11 +63,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     Icon(Icons.share),
                     Text("Share"),
                   ],
-                )
+                ),
               ],
             ),
-            Text(
-                "It seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something else"),
+            const Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                "It seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something elseIt seems like you're looking for placeholder text commonly known as Lorem Ipsum. Here is an example of Lorem Ipsum textLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Let me know if you need more Lorem Ipsum text or if you need help with something else",
+                textAlign: TextAlign.justify,
+              ),
+            )
           ],
         ),
       ),
